@@ -1,6 +1,9 @@
 ---
 import { getCollection, render, type CollectionEntry } from 'astro:content'
 
+import { Comment } from 'astro-pure/advanced'
+import PageLayout from '@/layouts/CommonPage.astro'
+
 // 1. Generate a new path for every collection entry
 export async function getStaticPaths() {
   const patternEntries = await getCollection('pattern')
@@ -22,6 +25,7 @@ const { Content } = await render(entry)
 export const prerender = true
 ---
 
-Title: {entry.data.title}
-
-<Content />
+<PageLayout title={entry.data.title} info='/about'>
+  <Content />
+  <Comment />
+</PageLayout>

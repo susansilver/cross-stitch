@@ -4,6 +4,6 @@ title: Apollo
 
 This is an image and description
 
-![a local image](/public/images/wormhole.png)
+![a local image](/images/wormhole.png)
 
 Did this work?
