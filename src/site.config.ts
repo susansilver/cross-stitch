@@ -49,7 +49,8 @@ export const theme: ThemeUserConfig = {
     menu: [
       { title: 'Blog', link: '/blog' },
       { title: 'About', link: '/about' },
-      { title: 'Currently watching', link: '/watching' },
+      { title: 'My Projects', link: '/current-projects' },
+      { title: 'Currently Watching', link: '/watching' },
       { title: 'Comment Policy', link: '/comment-policy' }
     ]
   },
